@@ -1,5 +1,4 @@
 import streamlit as st
-import pydds
 from pydds import MassFunction
 
 def diagnostic_medical():
@@ -17,7 +16,8 @@ def diagnostic_medical():
     st.text(f"Expert 3: {m3}")
 
     # Fusion des évaluations médicales
-    result = m1.combine_conjunctive(m2, m3)
+    m12=m1&m2
+    result = m12&m3
 
     # Affichage du résultat de la fusion
     st.subheader("Résultat de la fusion (Dempster-Shafer Combinaison rule)")
@@ -38,7 +38,8 @@ def recommandation_produits():
     st.text(f"Expert 3: {m3}")
 
     # Fusion des évaluations de recommandation
-    result = m1.combine_conjunctive(m2, m3)
+    m12=m1&m2
+    result = m12&m3
 
     # Affichage du résultat de la fusion
     st.subheader("Résultat de la fusion (Dempster-Shafer Combinaison rule)")
