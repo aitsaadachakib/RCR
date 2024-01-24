@@ -14,6 +14,12 @@ def diagnostic_medical():
     st.text(f"Expert 1: {m1}")
     st.text(f"Expert 2: {m2}")
     st.text(f"Expert 3: {m3}")
+    st.text(f"bel_1 = {m1.bel()}")
+    st.text(f"pl_1 = {m1.pl()}")
+    st.text(f"bel_1 = {m2.bel()}")
+    st.text(f"pl_1 = {m2.pl()}")
+    st.text(f"bel_1 = {m3.bel()}")
+    st.text(f"pl_1 = {m3.pl()}")
 
     # Fusion des évaluations médicales
     m12=m1&m2
@@ -36,6 +42,12 @@ def recommandation_produits():
     st.text(f"Expert 1: {m1}")
     st.text(f"Expert 2: {m2}")
     st.text(f"Expert 3: {m3}")
+    st.text(f"bel_1 = {m1.bel()}")
+    st.text(f"pl_1 = {m1.pl()}")
+    st.text(f"bel_1 = {m2.bel()}")
+    st.text(f"pl_1 = {m2.pl()}")
+    st.text(f"bel_1 = {m3.bel()}")
+    st.text(f"pl_1 = {m3.pl()}")
 
     # Fusion des évaluations de recommandation
     m12=m1&m2
