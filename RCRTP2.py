@@ -89,10 +89,9 @@ def fuzzy_heating_controller():
         (Temperature.Hot, Isolation.HighIsolation, HeatingPower.ModeratePower): HeaterOutput.ModerateOutput,
         (Temperature.Hot, Isolation.HighIsolation, HeatingPower.HighPower): HeaterOutput.HighOutput,
         
-        # ... Ajoutez d'autres règles selon votre besoin
     })
+    
 
-    # Interface utilisateur pour les valeurs d'entrée
     st.sidebar.header("Entrées")
     ambient_temp = st.sidebar.slider("Température ambiante", min_value=0, max_value=30, value=0)
     insulation_level = st.sidebar.slider("Niveau d'isolation", min_value=0, max_value=10, value=0)
